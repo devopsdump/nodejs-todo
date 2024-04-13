@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM node:14 AS builder
+FROM node:lts as builder
 
 # Set the working directory in the container
 WORKDIR /app
