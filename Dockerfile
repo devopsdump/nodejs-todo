@@ -13,9 +13,6 @@ RUN npm install --production
 # Copy the rest of the application code
 COPY . .
 
-# Build the application
-RUN npm run build
-
 # Stage 2: Create a lightweight image to run the application
 FROM node:14-alpine
 
